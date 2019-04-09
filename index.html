@@ -620,12 +620,400 @@
      -->
    </TABLE>
    
-  <P>
-  <!-- a button which the user will click to get the total values from the second table.
-    -->
+   
+    
+    <H> <b>Complexity Weighting Factors <H>
+    <BR>
+    // heading of the second table
+    <H> Rate each factor on a scale of 0 to 5: 
+       <BR> (0 = No influence,&nbsp;&nbsp; 1 = Incidental,&nbsp;&nbsp; 2 = Moderate,&nbsp;&nbsp;
+            3 = Average,&nbsp;&nbsp; 4 = Significant,&nbsp;&nbsp; 5 = Essential): <H>
+    </b>
+    <BR>
+    
+    
+    <!-- Creating the second table with its properties
+         There is 14 questions (row) on the table and each one has the same properties.
+      -->
+    <TABLE BORDER = 1  >
+      <TR BGCOLOR="BLACK">
+        <TH > <b>&nbsp;
+          Question</b>
+        <TH > <b>0</b>
+        <TH > <b>1</b>
+        <TH > <b>2</b>
+        <TH > <b>3</b>
+        <TH > <b>4</b>   
+        <TH > <b>5</b>
+         
+      <TR><TD  ><b>
+          &nbsp; 1. Does the system require reliable backup and recovery?</b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q1Field" value="0"
+              onFocus = "promptQ1()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q1Field" value="1"
+              onFocus = "promptQ1()" onBlur = "clearStatus()">
+            </b>
   
-  <INPUT TYPE = "BUTTON" Name="showTotalWeight" VALUE = "Show Total of weighting Factor" 
-         onClick = "showWeightingTotal()">
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q1Field" value="2"
+              onFocus = "promptQ1()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q1Field" value="3"
+              onFocus = "promptQ1()" onBlur = "clearStatus()">
+              </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q1Field" value="4"
+              onFocus = "promptQ1()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q1Field" value="5"
+              onFocus = "promptQ1()" onBlur = "clearStatus()">
+              </b>
+      <TR><TD  ><b>&nbsp; 2. Are data communications required?</b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q2Field" value="0"
+              onFocus = "promptQ2()"  onBlur = "clearStatus()"  Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q2Field" value="1"
+              onFocus = "promptQ2()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q2Field" value="2"
+              onFocus = "promptQ2()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q2Field" value="3"
+              onFocus = "promptQ2()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q2Field" value="4"
+              onFocus = "promptQ2()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q2Field" value="5"
+              onFocus = "promptQ2()" onBlur = "clearStatus()">
+              </b>
+      <TR><TD  ><b>
+           &nbsp; 3. Are there distributed processing functions?</b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q3Field" value="0"
+              onFocus = "promptQ3()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q3Field" value="1"
+              onFocus = "promptQ3()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q3Field" value="2"
+              onFocus = "promptQ3()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q3Field" value="3"
+              onFocus = "promptQ3()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q3Field" value="4"
+              onFocus = "promptQ3()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q3Field" value="5"
+              onFocus = "promptQ3()" onBlur = "clearStatus()">
+            </b>
+      <TR><TD  ><b>&nbsp; 4. Is performance critical?</b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q4Field" value="0"
+              onFocus = "promptQ4()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q4Field" value="1"
+              onFocus = "promptQ4()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q4Field" value="2"
+              onFocus = "promptQ4()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q4Field" value="3"
+              onFocus = "promptQ4()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q4Field" value="4"
+              onFocus = "promptQ4()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q4Field" value="5"
+              onFocus = "promptQ4()" onBlur = "clearStatus()">
+            </b>
+      <TR><TD  ><b>&nbsp; 5. Will the
+          system run in an existing, heavily utilized operational environment?</b> 
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q5Field" value="0"
+              onFocus = "promptQ5()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q5Field" value="1"
+              onFocus = "promptQ5()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q5Field" value="2"
+              onFocus = "promptQ5()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q5Field" value="3"
+              onFocus = "promptQ5()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q5Field" value="4"
+              onFocus = "promptQ5()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q5Field" value="5"
+              onFocus = "promptQ5()"  onBlur = "clearStatus()">
+            </b>
+      <TR><TD  ><b>
+            &nbsp; 6. Does the system require on-line data entry?</b> 
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q6Field" value="0"
+              onFocus = "promptQ6()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q6Field" value="1"
+              onFocus = "promptQ6()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q6Field" value="2"
+              onFocus = "promptQ6()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q6Field" value="3"
+              onFocus = "promptQ6()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q6Field" value="4"
+              onFocus = "promptQ6()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q6Field" value="5"
+              onFocus = "promptQ6()" onBlur = "clearStatus()">
+            </b>
+      <TR><TD  ><b>
+           &nbsp; 7. Does the on-line data entry require the input transaction to be built over multiple screens or operations?
+           </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q7Field" value="0"
+              onFocus = "promptQ7()"
+          onBlur = "clearStatus()"
+              Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q7Field" value="1"
+              onFocus = "promptQ7()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q7Field" value="2"
+              onFocus = "promptQ7()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q7Field" value="3"
+              onFocus = "promptQ7()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q7Field" value="4"
+              onFocus = "promptQ7()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q7Field" value="5"
+              onFocus = "promptQ7()" onBlur = "clearStatus()">
+            </b>
+      <TR><TD  ><b>&nbsp; 8. Are the master file updated on-line?
+           </b> 
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q8Field" value="0"
+              onFocus = "promptQ8()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q8Field" value="1"
+              onFocus = "promptQ8()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q8Field" value="2"
+              onFocus = "promptQ8()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q8Field" value="3"
+              onFocus = "promptQ8()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q8Field" value="4"
+              onFocus = "promptQ8()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q8Field" value="5"
+              onFocus = "promptQ8()" onBlur = "clearStatus()">
+            </b>
+  
+      <TR><TD  ><b>&nbsp; 9. Are the inputs, outputs, 
+            files, or inquiries complex?</b> 
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q9Field" value="0"
+              onFocus = "promptQ9()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q9Field" value="1"
+              onFocus = "promptQ9()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q9Field" value="2"
+              onFocus = "promptQ9()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q9Field" value="3"
+              onFocus = "promptQ9()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q9Field" value="4"
+              onFocus = "promptQ9()"  onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q9Field" value="5"
+              onFocus = "promptQ9()" onBlur = "clearStatus()">
+            </b>
+      <TR><TD  ><b>10. Is the internal processing complex?</b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q10Field" value="0"
+              onFocus = "promptQ10()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q10Field" value="1"
+              onFocus = "promptQ10()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q10Field" value="2"
+              onFocus = "promptQ10()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q10Field" value="3"
+              onFocus = "promptQ10()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q10Field" value="4"
+              onFocus = "promptQ10()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q10Field" value="5"
+              onFocus = "promptQ10()" onBlur = "clearStatus()">
+            </b>
+      <TR><TD  ><b>11. In the code designed to be reusable?</b> 
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q11Field" value="0"
+              onFocus = "promptQ11()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q11Field" value="1"
+              onFocus = "promptQ11()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q11Field" value="2"
+              onFocus = "promptQ11()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q11Field" value="3"
+              onFocus = "promptQ11()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q11Field" value="4"
+              onFocus = "promptQ11()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q11Field" value="5"
+              onFocus = "promptQ11()" onBlur = "clearStatus()">
+            </b>
+      <TR><TD  ><b>12. Are conversion and installation included 
+           in the design?</b> 
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q12Field" value="0"
+              onFocus = "promptQ12()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q12Field" value="1"
+              onFocus = "promptQ12()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q12Field" value="2"
+              onFocus = "promptQ12()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q12Field" value="3"
+              onFocus = "promptQ12()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q12Field" value="4"
+              onFocus = "promptQ12()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q12Field" value="5"
+              onFocus = "promptQ12()" onBlur = "clearStatus()">
+            </b>
+      <TR><TD  ><b>13. Is the system designed for multiple 
+          installations in different organizations?</b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q13Field" value="0"
+              onFocus = "promptQ13()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q13Field" value="1"
+              onFocus = "promptQ13()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q13Field" value="2"
+              onFocus = "promptQ13()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q13Field" value="3"
+              onFocus = "promptQ13()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q13Field" value="4"
+              onFocus = "promptQ13()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q13Field" value="5"
+              onFocus = "promptQ13()" onBlur = "clearStatus()">
+            </b>
+      <TR><TD  ><b>14. Is the application designed to facilitate 
+          change and ease of use by the user?</b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q14Field" value="0"
+              onFocus = "promptQ14()" onBlur = "clearStatus()" Checked>
+            </b>
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q14Field" value="1"
+              onFocus = "promptQ14()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q14Field" value="2"
+              onFocus = "promptQ14()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q14Field" value="3"
+              onFocus = "promptQ14()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q14Field" value="4"
+              onFocus = "promptQ14()" onBlur = "clearStatus()">
+            </b>
+  
+          <TD  ><b><INPUT TYPE = "RADIO" NAME = "Q14Field" value="5"
+              onFocus = "promptQ14()" onBlur = "clearStatus()" >
+            </b>
+      <TR><TD   ><b>&nbsp;&nbsp;&nbsp;
+          Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp 
+                    <INPUT TYPE = "TEXT" VALUE = "" NAME = "total" size = 6 
+                              onfocus="return unfocus_total()">
+          </b>
+          <TD   >
+          <TD   >
+          <TD   >
+          <TD   >
+          <TD   >
+          <TD   >
+     <!--  closing the second table       
+       -->
+     </TABLE>
+     
+    <P>
+    <!-- a button which the user will click to get the total values from the second table.
+      -->
+    &nbsp;&nbsp;&nbsp;&nbsp 
+    <INPUT TYPE = "BUTTON" Name="showTotalWeight" VALUE = "Show Total of weighting Factor" 
+           onClick = "showWeightingTotal()">
   
   <BR><BR>
 
@@ -638,7 +1026,7 @@
   <INPUT TYPE = "TEXT" VALUE="" NAME = "fpTotal" size = 10 onfocus="return unfocus_fpTotal()">
   
   <BR>
-  </center>
+  
 
   <H2 ><i> Step 3: </i>
    We have to find LOC (Lines of Code), and We do this by 
@@ -647,7 +1035,7 @@
   <!-- Creating the third table wiTH scope="col"its properties
        Here is a list of languages and LOC assoicated wiTH scope="col"it. 
     -->
-  <center>
+  
     <TABLE class="table">
         <thead>
             <TR>
@@ -794,8 +1182,8 @@
    </TABLE>
 
   <BR>&nbsp;&nbsp;&nbsp;&nbsp&nbsp; 
-  <font size="5">LOC/F<H>
-  <font size="5">P: <H>   
+  LOC/F<H>
+  P: <H>   
   
   <!-- a button which the user will click to get the LOC/FP based on results the third table and the FP calculateD
     -->
@@ -804,11 +1192,11 @@
   <INPUT TYPE = "TEXT" VALUE="" NAME ="LOCTotal" size = 10 onfocus="return unfocus_LOCTotal()">
   
   <BR>
-  </center>
+  
 
-  <H2 align="left"> <font face="Andy" size="6" color="#0000FF"><i> Step 4:</i>
-  <font color="#0000FF" size="3">  Final Step is to select complexity of the software project: </H2>
-  <center>
+  <H2>  <i> Step 4:</i>
+   Final Step is to select complexity of the software project: </H2>
+  
   <!-- Creating the last table wiTH scope="col"its properties
        Here, the user will choose the type of software project he/she is developing. 
     -->
@@ -860,16 +1248,16 @@
   <!-- a button which the user will click to get the final  caluclation of the Effort and the Duration of a software project  
     --> 
   <INPUT TYPE = "BUTTON" Name="calculate" VALUE = "Calculate Effort and Duration" onClick = "showE()">
-  <H> <font size="5"> 
+  <H>  
   <BR>
-  <font size="5">Effort (E) = ab(KLOC)<sup>b</sup>b
+  Effort (E) = ab(KLOC)<sup>b</sup>b
   =<H>
   
   <!-- text boxes where the final results will be stored
    -->
   <INPUT TYPE = "TEXT" VALUE="" NAME = "Effort" size = 10 onfocus="return unfocus_Effort()"> &nbsp;&nbsp;&nbsp;&nbsp
   
-  <H>  <font color="#0000FF" size="5">Duration (D) = cb(E)<sup>d</sup>b<sup><H></sup>
+  <H>Duration (D) = cb(E)<sup>d</sup>b<sup><H></sup>
   =  <INPUT TYPE = "TEXT" VALUE="" NAME = "Duration" size = 10 onfocus="return unfocus_Duration()">
   <BR><BR>
   <!-- a button which the user can click it to reset all fields on the form
