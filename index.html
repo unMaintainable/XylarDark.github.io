@@ -291,7 +291,7 @@
                             <INPUT TYPE="RADIO" NAME="FactorField" value="3" onFocus="promptFactor()"
                                    onBlur="clearStatus()">
                         </th>
-                        <th scope="col">                           
+                        <th scope="col">
                         </th>
                         <th scope="col">
                             Total
@@ -423,7 +423,7 @@
                 <td scope="row">
                     <INPUT TYPE="TEXT" VALUE="" NAME="total1" size=10 onfocus="return unfocus_total1()">
                 </td>
-                
+
             </TABLE>
 
             <P>
@@ -916,250 +916,248 @@
 
                 <label>The Function Points is: </label>
 
-                        <!-- a button which the user will click to get the Function Pioints value based on results form the first two tabgles.
-                        -->
-                        <INPUT TYPE="BUTTON" Name="FP" VALUE="Show Function Points" onClick="showFP()">
+                <!-- a button which the user will click to get the Function Pioints value based on results form the first two tabgles.
+                -->
+                <INPUT TYPE="BUTTON" Name="FP" VALUE="Show Function Points" onClick="showFP()">
 
-                        <INPUT TYPE="TEXT" VALUE="" NAME="fpTotal" size=10 onfocus="return unfocus_fpTotal()">
+                <INPUT TYPE="TEXT" VALUE="" NAME="fpTotal" size=10 onfocus="return unfocus_fpTotal()">
 
-                        <BR>
+                <BR>
 
-                        <H4> Step 3: Choose project language type.</H4>
-                        <!-- Creating the third table wiTH scope="col"its properties
-                           Here is a list of languages and LOC assoicated wiTH scope="col"it.
-                        -->
-                        <TABLE class="table">
-                            <thead>
-                                <TR>
-                                    <TH scope="col"> Programming Language </TH>
-                                    <TH scope="col"> LOC/FP (average) </TH>
-                                    <TH scope="col"> Select </TH>
-                                </TR>
-                            </thead>
-                            <tbody>
-                                <Tr>
-                                    <th scope="row">Assembly Language</th>
-                                    <td scope="row">
-                                        320
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="320"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row">C</th>
-                                    <td scope="row">
-                                        128
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="320"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row">COBOL</th>
-                                    <td scope="row">
-                                        105
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="105"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row">Fortran</th>
-                                    <td scope="row">
-                                        105
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="105"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row">Pascal</th>
-                                    <td scope="row">
-                                        90
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="90"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row">Ada</th>
-                                    <td scope="row">
-                                        70
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="70"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row">Object-Oriented Languages</th>
-                                    <td scope="row">
-                                        30
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="30"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row">Object-Oriented Languages</th>
-                                    <td scope="row">
-                                        30
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="30"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row">FourTH scope="col"Generation Languages (4GLs)</th>
-                                    <td scope="row">
-                                        20
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="20"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row">Code Generators</th>
-                                    <td scope="row">
-                                        15
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="15"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row"> Spreadsheets</th>
-                                    <td scope="row">
-                                        6
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="6"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row"> Spreadsheets</th>
-                                    <td scope="row">
-                                        6
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="6"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                                <Tr>
-                                    <th scope="row"> Graphical Languages (icons)</th>
-                                    <td scope="row">
-                                        4
-                                    </td>
-                                    <td scope="row">
-                                        <INPUT TYPE="RADIO" NAME="LanguageField" value="4"
-                                               onFocus="promptLanguage()" onBlur="clearStatus()">
-                                    </td>
-                                </Tr>
-                            </tbody>
+                <H4> Step 3: Choose project language type.</H4>
+                <!-- Creating the third table wiTH scope="col"its properties
+                   Here is a list of languages and LOC assoicated wiTH scope="col"it.
+                -->
+                <TABLE class="table">
+                    <thead>
+                        <TR>
+                            <TH scope="col"> Programming Language </TH>
+                            <TH scope="col"> LOC/FP (average) </TH>
+                            <TH scope="col"> Select </TH>
+                        </TR>
+                    </thead>
+                    <tbody>
+                        <Tr>
+                            <th scope="row">Assembly Language</th>
+                            <td scope="row">
+                                320
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="320"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">C</th>
+                            <td scope="row">
+                                128
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="320"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">COBOL</th>
+                            <td scope="row">
+                                105
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="105"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">Fortran</th>
+                            <td scope="row">
+                                105
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="105"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">Pascal</th>
+                            <td scope="row">
+                                90
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="90"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">Ada</th>
+                            <td scope="row">
+                                70
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="70"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">Object-Oriented Languages</th>
+                            <td scope="row">
+                                30
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="30"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">Object-Oriented Languages</th>
+                            <td scope="row">
+                                30
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="30"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">FourTH scope="col"Generation Languages (4GLs)</th>
+                            <td scope="row">
+                                20
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="20"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">Code Generators</th>
+                            <td scope="row">
+                                15
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="15"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row"> Spreadsheets</th>
+                            <td scope="row">
+                                6
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="6"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row"> Spreadsheets</th>
+                            <td scope="row">
+                                6
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="6"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row"> Graphical Languages (icons)</th>
+                            <td scope="row">
+                                4
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="LanguageField" value="4"
+                                       onFocus="promptLanguage()" onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                    </tbody>
 
-                            <!-- Closing the third table.
-                            -->
-                        </TABLE>
+                    <!-- Closing the third table.
+                    -->
+                </TABLE>
 
-                        
-                                <!-- a button which the user will click to get the LOC/FP based on results the third table and the FP calculateD
-                                -->
-                                <label>LOC/FP:</label>
-                                <INPUT TYPE="BUTTON" Name="LOCFP" VALUE="Show LOC/FP" onClick="showLOC()">
+                <!-- a button which the user will click to get the LOC/FP based on results the third table and the FP calculateD
+                -->
+                <label>LOC/FP:</label>
+                <INPUT TYPE="BUTTON" Name="LOCFP" VALUE="Show LOC/FP" onClick="showLOC()">
 
-                                <INPUT TYPE="TEXT" VALUE="" NAME="LOCTotal" size=10
-                                       onfocus="return unfocus_LOCTotal()">
+                <INPUT TYPE="TEXT" VALUE="" NAME="LOCTotal" size=10
+                       onfocus="return unfocus_LOCTotal()">
 
-                                <i> Step 4:</i>
-                                Final Step is to select complexity of the software project:
+                <h4> Step 4:  Final Step is to select complexity of the software project:</h4>
 
-                                <!-- Creating the last table wiTH scope="col"its properties
-                                   Here, the user will choose the type of software project he/she is developing.
-                                -->
-                                <TABLE class="table">
-                                    <thead>
-                                        <TR>
-                                            <TH scope="col"> Software Project </TH>
-                                            <TH scope="col"> ab </TH>
-                                            <TH scope="col"> bb </TH>
-                                            <TH scope="col"> cb </TH>
-                                            <TH scope="col"> db </TH>
-                                            <TH scope="col"> Select </TH>
-                                        </TR>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <Th scope="row">Organic</Th>
-                                            <td scope="row">2.4</td>
-                                            <td scope="row">1.05</td>
-                                            <td scope="row">2.5</td>
-                                            <td scope="row">0.38</td>
-                                            <td scope="row">
-                                                <INPUT TYPE="RADIO" NAME="typeField" value="1"
-                                                       onFocus="promptType()" onBlur="clearStatus()">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <Th scope="row">Semi-detached</Th>
-                                            <td scope="row">3.0</td>
-                                            <td scope="row">1.12</td>
-                                            <td scope="row">2.5</td>
-                                            <td scope="row">0.35</td>
-                                            <td scope="row">
-                                                <INPUT TYPE="RADIO" NAME="typeField" value="2"
-                                                       onFocus="promptType()" onBlur="clearStatus()">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <Th scope="row">Embedded</Th>
-                                            <td scope="row">3.6</td>
-                                            <td scope="row">1.20</td>
-                                            <td scope="row">2.5</td>
-                                            <td scope="row">0.32</td>
-                                            <td scope="row">
-                                                <INPUT TYPE="RADIO" NAME="typeField" value="3"
-                                                       onFocus="promptType()" onBlur="clearStatus()">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </TABLE>
+                <!-- Creating the last table wiTH scope="col"its properties
+                   Here, the user will choose the type of software project he/she is developing.
+                -->
+                <TABLE class="table">
+                    <thead>
+                        <TR>
+                            <TH scope="col"> Software Project </TH>
+                            <TH scope="col"> ab </TH>
+                            <TH scope="col"> bb </TH>
+                            <TH scope="col"> cb </TH>
+                            <TH scope="col"> db </TH>
+                            <TH scope="col"> Select </TH>
+                        </TR>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <Th scope="row">Organic</Th>
+                            <td scope="row">2.4</td>
+                            <td scope="row">1.05</td>
+                            <td scope="row">2.5</td>
+                            <td scope="row">0.38</td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="typeField" value="1"
+                                       onFocus="promptType()" onBlur="clearStatus()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <Th scope="row">Semi-detached</Th>
+                            <td scope="row">3.0</td>
+                            <td scope="row">1.12</td>
+                            <td scope="row">2.5</td>
+                            <td scope="row">0.35</td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="typeField" value="2"
+                                       onFocus="promptType()" onBlur="clearStatus()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <Th scope="row">Embedded</Th>
+                            <td scope="row">3.6</td>
+                            <td scope="row">1.20</td>
+                            <td scope="row">2.5</td>
+                            <td scope="row">0.32</td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="typeField" value="3"
+                                       onFocus="promptType()" onBlur="clearStatus()">
+                            </td>
+                        </tr>
+                    </tbody>
+                </TABLE>
 
-                                <!-- a button which the user will click to get the final  caluclation of the Effort and the Duration of a software project
-                                -->
-                                <INPUT TYPE="BUTTON" Name="calculate" VALUE="Calculate Effort and Duration"
-                                       onClick="showE()">
-                                <H>
-                                    <BR>Effort (E) = ab(KLOC)<sup>b</sup>b
-                                    =<H>
+                <!-- a button which the user will click to get the final  caluclation of the Effort and the Duration of a software project
+                -->
+                <INPUT TYPE="BUTTON" Name="calculate" VALUE="Calculate Effort and Duration"
+                       onClick="showE()">
+                <BR>
+                <label>
+                    Effort (E) = ab(KLOC)<sup>b</sup>b =
+                </label>
+                <!-- text boxes where the final results will be stored
+                -->
+                <INPUT TYPE="TEXT" VALUE="" NAME="Effort" size=10
+                       onfocus="return unfocus_Effort()"> &nbsp;&nbsp;&nbsp;&nbsp
+                <label>
+                    Duration (D) = cb(E)<sup>d</sup><sup>b</sup>
+                    =
+                </label>
 
-                                        <!-- text boxes where the final results will be stored
-                                        -->
-                                        <INPUT TYPE="TEXT" VALUE="" NAME="Effort" size=10
-                                               onfocus="return unfocus_Effort()"> &nbsp;&nbsp;&nbsp;&nbsp
-
-                                        <H>
-                                            Duration (D) = cb(E)<sup>d</sup>b<sup>
-                                                <H>
-                                            </sup>
-                                            = <INPUT TYPE="TEXT" VALUE="" NAME="Duration" size=10
-                                                     onfocus="return unfocus_Duration()">
-                                            <BR><BR>
-                                            <!-- a button which the user can click it to reset all fields on the form
-                                            -->
-                                            <INPUT TYPE="RESET" Name="Reset" VALUE="Reset Data"
-                                                   onClick="clearStatus()">
+                <INPUT TYPE="TEXT" VALUE="" NAME="Duration" size=10
+                       onfocus="return unfocus_Duration()">
+                <BR><BR>
+                <!-- a button which the user can click it to reset all fields on the form
+                -->
+                <INPUT TYPE="RESET" Name="Reset" VALUE="Reset Data"
+                       onClick="clearStatus()">
 
         </FORM>
         <!--closing the body
