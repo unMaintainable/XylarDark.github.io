@@ -264,7 +264,7 @@
         <!-- This is the first heading which is the first step users need to do the calculation.
          The next few lines of code shows the properties of the first heading.
         -->
-        <H3>Step 1: Fill the Information Domain table where we can get the Count Total (CT) which will be used in the FP equation:</H3>
+        <H4>Step 1: Fill the Information Domain table where we can get the Count Total (CT) which will be used in the FP equation:</H4>
 
         <!--  Naming the form.
           -->
@@ -441,442 +441,429 @@
                 -->
             </TABLE>
 
-
-
             <P>
                 <!-- a button which the user will click to get the count total value from the table.
                 -->
                 <INPUT TYPE="BUTTON" Name="countTotal" VALUE="Count Total" onClick="showCountTotal()">
 
-
-
-
-
                 <!-- Starting the second step
                 -->
-                <H2>
-                    <b><i> Step 2:</i></b>&nbsp;
+                <H4>
+                    Step 2: Calculate the "Complexity Adjustment Values":
+                </H4>
 
-                    <b> Calculate the "Complexity Adjustment Values":</b>
+                <H6>
+                    Complexity Weighting Factors
+                </H6>
 
-                </H2>
+                // heading of the second table
+                <H6>
+                    Rate each factor on a scale of 0 to 5:
+                    (0 = No influence,&nbsp;&nbsp; 1 = Incidental,&nbsp;&nbsp; 2 = Moderate,&nbsp;&nbsp;
+                    3 = Average,&nbsp;&nbsp; 4 = Significant,&nbsp;&nbsp; 5 = Essential):
+                </H6>
 
-
-
-                <H>
-                    <b>
-                        Complexity Weighting Factors <H>
-
-                            // heading of the second table
-                            <H>
-                                Rate each factor on a scale of 0 to 5:
-                                (0 = No influence,&nbsp;&nbsp; 1 = Incidental,&nbsp;&nbsp; 2 = Moderate,&nbsp;&nbsp;
-                                3 = Average,&nbsp;&nbsp; 4 = Significant,&nbsp;&nbsp; 5 = Essential): <H>
-                    </b>
-
-
-
-                    <!-- Creating the second table with its properties
-                       There is 14 questions (row) on the table and each one has the same properties.
-                    -->
-                    <TABLE class="table">
-                        <thead>
-                            <TR>
-                                <TH scope="col"> 0 </TH>
-                                <TH scope="col"> 1 </TH>
-                                <TH scope="col">
-                                    2
-                                </TH>
-                                <th scope="col">
-                                    3
-                                </th>
-                                <th scope="col">
-                                    4
-                                </th>
-                                <th scope="col">
-                                    5
-                                </th>
-                            </TR>
-                        </thead>
-                        <tbody>
-                            <Tr>
-                                <th scope="row">1. Are there distributed processing functions?</th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q3Field" value="0" onFocus="promptQ3()" onBlur="clearStatus()"
-                                           Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q3Field" value="1" onFocus="promptQ3()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q3Field" value="2" onFocus="promptQ3()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q3Field" value="3" onFocus="promptQ3()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q3Field" value="4" onFocus="promptQ3()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q3Field" value="5" onFocus="promptQ3()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">2. Is performance critical?</th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q4Field" value="0" onFocus="promptQ4()" onBlur="clearStatus()"
-                                           Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q4Field" value="1" onFocus="promptQ4()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q4Field" value="2" onFocus="promptQ4()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q4Field" value="3" onFocus="promptQ4()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q4Field" value="4" onFocus="promptQ4()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q4Field" value="5" onFocus="promptQ4()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">
-                                    3. Will the
-                                    system run in an existing, heavily utilized operational environment?
-                                </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q5Field" value="0" onFocus="promptQ5()" onBlur="clearStatus()"
-                                           Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q5Field" value="1" onFocus="promptQ5()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q5Field" value="2" onFocus="promptQ5()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q5Field" value="3" onFocus="promptQ5()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q5Field" value="4" onFocus="promptQ5()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q5Field" value="5" onFocus="promptQ5()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">4. Does the system require on-line data entry? </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q6Field" value="0" onFocus="promptQ6()" onBlur="clearStatus()"
-                                           Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q6Field" value="1" onFocus="promptQ6()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q6Field" value="2" onFocus="promptQ6()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q6Field" value="3" onFocus="promptQ6()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q6Field" value="4" onFocus="promptQ6()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q6Field" value="5" onFocus="promptQ6()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">
-                                    5. Does the on-line data entry require the input transaction to be built
-                                    over
-                                    multiple screens or operations?
-                                </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q7Field" value="0" onFocus="promptQ7()" onBlur="clearStatus()"
-                                           Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q7Field" value="1" onFocus="promptQ7()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q7Field" value="2" onFocus="promptQ7()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q7Field" value="3" onFocus="promptQ7()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q7Field" value="4" onFocus="promptQ7()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q7Field" value="5" onFocus="promptQ7()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">6. Are the master file updated on-line? </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q8Field" value="0" onFocus="promptQ8()" onBlur="clearStatus()"
-                                           Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q8Field" value="1" onFocus="promptQ8()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q8Field" value="2" onFocus="promptQ8()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q8Field" value="3" onFocus="promptQ8()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q8Field" value="4" onFocus="promptQ8()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q8Field" value="5" onFocus="promptQ8()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">
-                                    7. Are the inputs, outputs,
-                                    files, or inquiries complex?
-                                </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q9Field" value="0" onFocus="promptQ9()" onBlur="clearStatus()"
-                                           Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q9Field" value="1" onFocus="promptQ9()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q9Field" value="2" onFocus="promptQ9()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q9Field" value="3" onFocus="promptQ9()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q9Field" value="4" onFocus="promptQ9()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q9Field" value="5" onFocus="promptQ9()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">8. Is the internal processing complex? </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q10Field" value="0" onFocus="promptQ10()"
-                                           onBlur="clearStatus()" Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q10Field" value="1" onFocus="promptQ10()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q10Field" value="2" onFocus="promptQ10()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q10Field" value="3" onFocus="promptQ10()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q10Field" value="4" onFocus="promptQ10()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q10Field" value="5" onFocus="promptQ10()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">9. In the code designed to be reusable? </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q11Field" value="0" onFocus="promptQ11()"
-                                           onBlur="clearStatus()" Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q11Field" value="1" onFocus="promptQ11()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q11Field" value="2" onFocus="promptQ11()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q11Field" value="3" onFocus="promptQ11()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q11Field" value="4" onFocus="promptQ11()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q11Field" value="5" onFocus="promptQ11()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">9. In the code designed to be reusable? </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q12Field" value="0" onFocus="promptQ12()"
-                                           onBlur="clearStatus()" Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q12Field" value="1" onFocus="promptQ12()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q12Field" value="2" onFocus="promptQ12()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q12Field" value="3" onFocus="promptQ12()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q12Field" value="4" onFocus="promptQ12()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q12Field" value="5" onFocus="promptQ12()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">
-                                    10. Are conversion and installation included
-                                    in the design?
-                                </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q13Field" value="0" onFocus="promptQ13()"
-                                           onBlur="clearStatus()" Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q13Field" value="1" onFocus="promptQ13()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q13Field" value="2" onFocus="promptQ13()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q13Field" value="3" onFocus="promptQ13()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q13Field" value="4" onFocus="promptQ13()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q13Field" value="5" onFocus="promptQ13()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">
-                                    11. Is the system designed for multiple
-                                    installations in different organizations?
-                                </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q14Field" value="0" onFocus="promptQ14()"
-                                           onBlur="clearStatus()" Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q14Field" value="1" onFocus="promptQ14()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q14Field" value="2" onFocus="promptQ14()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q14Field" value="3" onFocus="promptQ14()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q14Field" value="4" onFocus="promptQ14()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q14Field" value="5" onFocus="promptQ14()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">
-                                    12. Is the application designed to facilitate
-                                    change and ease of use by the user?
-                                </th>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q15Field" value="0" onFocus="promptQ15()"
-                                           onBlur="clearStatus()" Checked>
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q15Field" value="1" onFocus="promptQ15()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q15Field" value="2" onFocus="promptQ15()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q15Field" value="3" onFocus="promptQ15()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q15Field" value="4" onFocus="promptQ15()"
-                                           onBlur="clearStatus()">
-                                </td>
-                                <td scope="row">
-                                    <INPUT TYPE="RADIO" NAME="Q15Field" value="5" onFocus="promptQ15()"
-                                           onBlur="clearStatus()">
-                                </td>
-                            </Tr>
-                            <Tr>
-                                <th scope="row">Total</th>
-                                <td scope="row">
-                                    <INPUT TYPE="TEXT" VALUE="" NAME="total" size=6 onfocus="return unfocus_total()">
-                                </td>
-                            </Tr>
-                        </tbody>
-                    </TABLE>
+                <!-- Creating the second table with its properties
+                   There is 14 questions (row) on the table and each one has the same properties.
+                -->
+                <TABLE class="table">
+                    <thead>
+                        <TR>
+                            <TH scope="col"> 0 </TH>
+                            <TH scope="col"> 1 </TH>
+                            <TH scope="col">
+                                2
+                            </TH>
+                            <th scope="col">
+                                3
+                            </th>
+                            <th scope="col">
+                                4
+                            </th>
+                            <th scope="col">
+                                5
+                            </th>
+                        </TR>
+                    </thead>
+                    <tbody>
+                        <Tr>
+                            <th scope="row">1. Are there distributed processing functions?</th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q3Field" value="0" onFocus="promptQ3()" onBlur="clearStatus()"
+                                       Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q3Field" value="1" onFocus="promptQ3()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q3Field" value="2" onFocus="promptQ3()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q3Field" value="3" onFocus="promptQ3()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q3Field" value="4" onFocus="promptQ3()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q3Field" value="5" onFocus="promptQ3()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">2. Is performance critical?</th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q4Field" value="0" onFocus="promptQ4()" onBlur="clearStatus()"
+                                       Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q4Field" value="1" onFocus="promptQ4()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q4Field" value="2" onFocus="promptQ4()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q4Field" value="3" onFocus="promptQ4()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q4Field" value="4" onFocus="promptQ4()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q4Field" value="5" onFocus="promptQ4()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">
+                                3. Will the
+                                system run in an existing, heavily utilized operational environment?
+                            </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q5Field" value="0" onFocus="promptQ5()" onBlur="clearStatus()"
+                                       Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q5Field" value="1" onFocus="promptQ5()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q5Field" value="2" onFocus="promptQ5()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q5Field" value="3" onFocus="promptQ5()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q5Field" value="4" onFocus="promptQ5()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q5Field" value="5" onFocus="promptQ5()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">4. Does the system require on-line data entry? </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q6Field" value="0" onFocus="promptQ6()" onBlur="clearStatus()"
+                                       Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q6Field" value="1" onFocus="promptQ6()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q6Field" value="2" onFocus="promptQ6()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q6Field" value="3" onFocus="promptQ6()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q6Field" value="4" onFocus="promptQ6()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q6Field" value="5" onFocus="promptQ6()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">
+                                5. Does the on-line data entry require the input transaction to be built
+                                over
+                                multiple screens or operations?
+                            </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q7Field" value="0" onFocus="promptQ7()" onBlur="clearStatus()"
+                                       Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q7Field" value="1" onFocus="promptQ7()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q7Field" value="2" onFocus="promptQ7()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q7Field" value="3" onFocus="promptQ7()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q7Field" value="4" onFocus="promptQ7()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q7Field" value="5" onFocus="promptQ7()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">6. Are the master file updated on-line? </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q8Field" value="0" onFocus="promptQ8()" onBlur="clearStatus()"
+                                       Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q8Field" value="1" onFocus="promptQ8()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q8Field" value="2" onFocus="promptQ8()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q8Field" value="3" onFocus="promptQ8()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q8Field" value="4" onFocus="promptQ8()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q8Field" value="5" onFocus="promptQ8()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">
+                                7. Are the inputs, outputs,
+                                files, or inquiries complex?
+                            </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q9Field" value="0" onFocus="promptQ9()" onBlur="clearStatus()"
+                                       Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q9Field" value="1" onFocus="promptQ9()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q9Field" value="2" onFocus="promptQ9()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q9Field" value="3" onFocus="promptQ9()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q9Field" value="4" onFocus="promptQ9()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q9Field" value="5" onFocus="promptQ9()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">8. Is the internal processing complex? </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q10Field" value="0" onFocus="promptQ10()"
+                                       onBlur="clearStatus()" Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q10Field" value="1" onFocus="promptQ10()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q10Field" value="2" onFocus="promptQ10()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q10Field" value="3" onFocus="promptQ10()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q10Field" value="4" onFocus="promptQ10()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q10Field" value="5" onFocus="promptQ10()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">9. In the code designed to be reusable? </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q11Field" value="0" onFocus="promptQ11()"
+                                       onBlur="clearStatus()" Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q11Field" value="1" onFocus="promptQ11()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q11Field" value="2" onFocus="promptQ11()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q11Field" value="3" onFocus="promptQ11()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q11Field" value="4" onFocus="promptQ11()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q11Field" value="5" onFocus="promptQ11()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">9. In the code designed to be reusable? </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q12Field" value="0" onFocus="promptQ12()"
+                                       onBlur="clearStatus()" Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q12Field" value="1" onFocus="promptQ12()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q12Field" value="2" onFocus="promptQ12()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q12Field" value="3" onFocus="promptQ12()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q12Field" value="4" onFocus="promptQ12()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q12Field" value="5" onFocus="promptQ12()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">
+                                10. Are conversion and installation included
+                                in the design?
+                            </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q13Field" value="0" onFocus="promptQ13()"
+                                       onBlur="clearStatus()" Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q13Field" value="1" onFocus="promptQ13()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q13Field" value="2" onFocus="promptQ13()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q13Field" value="3" onFocus="promptQ13()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q13Field" value="4" onFocus="promptQ13()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q13Field" value="5" onFocus="promptQ13()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">
+                                11. Is the system designed for multiple
+                                installations in different organizations?
+                            </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q14Field" value="0" onFocus="promptQ14()"
+                                       onBlur="clearStatus()" Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q14Field" value="1" onFocus="promptQ14()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q14Field" value="2" onFocus="promptQ14()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q14Field" value="3" onFocus="promptQ14()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q14Field" value="4" onFocus="promptQ14()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q14Field" value="5" onFocus="promptQ14()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">
+                                12. Is the application designed to facilitate
+                                change and ease of use by the user?
+                            </th>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q15Field" value="0" onFocus="promptQ15()"
+                                       onBlur="clearStatus()" Checked>
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q15Field" value="1" onFocus="promptQ15()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q15Field" value="2" onFocus="promptQ15()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q15Field" value="3" onFocus="promptQ15()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q15Field" value="4" onFocus="promptQ15()"
+                                       onBlur="clearStatus()">
+                            </td>
+                            <td scope="row">
+                                <INPUT TYPE="RADIO" NAME="Q15Field" value="5" onFocus="promptQ15()"
+                                       onBlur="clearStatus()">
+                            </td>
+                        </Tr>
+                        <Tr>
+                            <th scope="row">Total</th>
+                            <td scope="row">
+                                <INPUT TYPE="TEXT" VALUE="" NAME="total" size=6 onfocus="return unfocus_total()">
+                            </td>
+                        </Tr>
+                    </tbody>
+                </TABLE>
 
             <P>
                 <!-- a button which the user will click to get the total values from the second table.
