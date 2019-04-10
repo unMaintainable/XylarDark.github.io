@@ -256,6 +256,18 @@
                 document.calculateForm.Reset.focus();
             }
 
+function calculateCost()
+{
+let durationDays = document.querySelector("input[name=Duration]").value;
+//8 hours per day * number of days * hourly wage
+let projectCost = (durationDays * 8 * document.getElementById("wage").value).toFixed(2);
+document.getElementById("projectTotalCost").value = projectCost;
+let numEmployees = document.getElementById("employees").value;
+document.getElementById("costPerEmployee").value = (projectCost / numEmployees).toFixed(2);
+
+let costPerDay = numEmployees * 8 * document.getElementById("wage").value;
+document.getElementById("costPerDay").value = costPerDay.toFixed(2);
+}
             // -->
             // End of JavaScript code
         </SCRIPT>
@@ -304,7 +316,7 @@
                         <th scope="row">Number of user inputs</th>
                         <td scope="row">
                             <INPUT TYPE="TEXT" NAME="inputs" value="" size=5 onFocus="promptFactor()"
-                                   onBlur="clearStatus()">
+                                   onBlur="clearStatus()" class="form-control">
                         </td>
                         <td scope="row">
                             3
@@ -319,14 +331,14 @@
                             =
                         </td>
                         <td scope="row">
-                            <INPUT TYPE="TEXT" NAME="tinputs" value="" size=5 onfocus="return unfocus_tinputs()">
+                            <INPUT TYPE="TEXT" NAME="tinputs" value="" size=5 onfocus="return unfocus_tinputs()" class="form-control">
                         </td>
                     </Tr>
                     <Tr>
                         <th scope="row">Number of user outputs</th>
                         <td scope="row">
                             <INPUT TYPE="TEXT" NAME="outputs" value="" size=5 onFocus="promptFactor()"
-                                   onBlur="clearStatus()">
+                                   onBlur="clearStatus()" class="form-control">
                         </td>
                         <td scope="row">
                             4
@@ -341,14 +353,14 @@
                             =
                         </td>
                         <td scope="row">
-                            <INPUT TYPE="TEXT" NAME="toutputs" value="" size=5 onfocus="return unfocus_toutputs()">
+                            <INPUT TYPE="TEXT" NAME="toutputs" value="" size=5 onfocus="return unfocus_toutputs()" class="form-control">
                         </td>
                     </Tr>
                     <Tr>
                         <th scope="row">Number of user inquiries</th>
                         <td scope="row">
                             <INPUT TYPE="TEXT" NAME="inquiries" value="" size=5 onFocus="promptFactor()"
-                                   onBlur="clearStatus()">
+                                   onBlur="clearStatus()" class="form-control" class="form-control">
                         </td>
                         <td scope="row">
                             3
@@ -363,14 +375,14 @@
                             =
                         </td>
                         <td scope="row">
-                            <INPUT TYPE="TEXT" NAME="tinquiries" value="" size=5 onfocus="return unfocus_toutputs()">
+                            <INPUT TYPE="TEXT" NAME="tinquiries" value="" size=5 onfocus="return unfocus_toutputs()" class="form-control">
                         </td>
                     </Tr>
                     <Tr>
                         <th scope="row">Number of files</th>
                         <td scope="row">
                             <INPUT TYPE="TEXT" NAME="files" value="" size=5 onFocus="promptFactor()"
-                                   onBlur="clearStatus()">
+                                   onBlur="clearStatus()" class="form-control">
                         </td>
                         <td scope="row">
                             7
@@ -385,7 +397,7 @@
                             =
                         </td>
                         <td scope="row">
-                            <INPUT TYPE="TEXT" NAME="tfiles" value="" size=5 onfocus="return unfocus_toutputs()">
+                            <INPUT TYPE="TEXT" NAME="tfiles" value="" size=5 onfocus="return unfocus_toutputs()" class="form-control">
                         </td>
                     </Tr>
 
@@ -393,7 +405,7 @@
                         <th scope="row">Number of external interfaces</th>
                         <td scope="row">
                             <INPUT TYPE="TEXT" NAME="interfaces" value="" size=5 onFocus="promptFactor()"
-                                   onBlur="clearStatus()">
+                                   onBlur="clearStatus()" class="form-control">
                         </td>
                         <td scope="row">
                             5
@@ -408,7 +420,7 @@
                             =
                         </td>
                         <td scope="row">
-                            <INPUT TYPE="TEXT" NAME="tinterfaces" value="" size=5 onfocus="return unfocus_toutputs()">
+                            <INPUT TYPE="TEXT" NAME="tinterfaces" value="" size=5 onfocus="return unfocus_toutputs()" class="form-control">
                         </td>
                     </Tr>
                 <th scope="row">
@@ -421,7 +433,7 @@
                 <td scope="row"></td>
                 <td scope="row"></td>
                 <td scope="row">
-                    <INPUT TYPE="TEXT" VALUE="" NAME="total1" size=10 onfocus="return unfocus_total1()">
+                    <INPUT TYPE="TEXT" VALUE="" NAME="total1" size=10 onfocus="return unfocus_total1()" class="form-control">
                 </td>
 
             </TABLE>
@@ -429,7 +441,7 @@
             <P>
                 <!-- a button which the user will click to get the count total value from the table.
                 -->
-                <INPUT TYPE="BUTTON" Name="countTotal" VALUE="Count Total" onClick="showCountTotal()">
+                <INPUT TYPE="BUTTON" Name="countTotal" VALUE="Count Total" onClick="showCountTotal()"  class="btn btn-primary">
 
                 <!-- Starting the second step
                 -->
@@ -495,7 +507,7 @@
                             </td>
                             <td scope="row">
                                 <INPUT TYPE="RADIO" NAME="Q1Field" value="5" onFocus="promptQ1()"
-                                       onBlur="clearStatus()">
+                                       onBlur="clearStatus()" >
                             </td>
                         </Tr>
                         <Tr>
@@ -898,7 +910,7 @@
                         <Tr>
                             <th scope="row">Total</th>
                             <td scope="row">
-                                <INPUT TYPE="TEXT" VALUE="" NAME="total" size=6 onfocus="return unfocus_total()">
+                                <INPUT TYPE="TEXT" VALUE="" NAME="total" size=6 onfocus="return unfocus_total()" class="form-control">
                             </td>
                         </Tr>
                     </tbody>
@@ -909,19 +921,19 @@
                 -->
 
                 <INPUT TYPE="BUTTON" Name="showTotalWeight" VALUE="Show Total of weighting Factor"
-                       onClick="showWeightingTotal()">
+                       onClick="showWeightingTotal()" class="btn btn-primary"  class="btn btn-primary">
 
-                <BR>
-                <BR>
+                <br/>
+                <br/>
 
                 <label>The Function Points is: </label>
 
                 <!-- a button which the user will click to get the Function Pioints value based on results form the first two tabgles.
                 -->
-                <INPUT TYPE="BUTTON" Name="FP" VALUE="Show Function Points" onClick="showFP()">
-
-                <INPUT TYPE="TEXT" VALUE="" NAME="fpTotal" size=10 onfocus="return unfocus_fpTotal()">
-
+<div class="form-group form-inline">
+                <INPUT TYPE="BUTTON" Name="FP" VALUE="Show Function Points" onClick="showFP()"  class="btn btn-primary" >
+                <INPUT TYPE="TEXT" VALUE="" NAME="fpTotal" size=10 onfocus="return unfocus_fpTotal()" class="form-control" style="width: 200px;">
+</div>
                 <BR>
 
                 <H4> Step 3: Choose project language type.</H4>
@@ -1075,12 +1087,12 @@
 
                 <!-- a button which the user will click to get the LOC/FP based on results the third table and the FP calculateD
                 -->
-                <label>LOC/FP:</label>
-                <INPUT TYPE="BUTTON" Name="LOCFP" VALUE="Show LOC/FP" onClick="showLOC()">
-
-                <INPUT TYPE="TEXT" VALUE="" NAME="LOCTotal" size=10
-                       onfocus="return unfocus_LOCTotal()">
-
+<div class="form-inline">
+                <label >LOC/FP:</label>
+                <INPUT TYPE="BUTTON" Name="LOCFP" VALUE="Show LOC/FP" onClick="showLOC()" class="btn btn-primary">
+<INPUT TYPE="TEXT" VALUE="" NAME="LOCTotal" size=10
+                       onfocus="return unfocus_LOCTotal()" class="form-control">
+</div>
                 <h4> Step 4:  Final Step is to select complexity of the software project:</h4>
 
                 <!-- Creating the last table wiTH scope="col"its properties
@@ -1137,25 +1149,40 @@
                 <!-- a button which the user will click to get the final  caluclation of the Effort and the Duration of a software project
                 -->
                 <INPUT TYPE="BUTTON" Name="calculate" VALUE="Calculate Effort and Duration"
-                       onClick="showE()">
-                <BR>
+                       onClick="showE()" class="btn btn-primary">
+                <br/>
+<br/>
                 <label>
                     Effort (E) = ab(KLOC)<sup>b</sup>b =
                 </label>
                 <!-- text boxes where the final results will be stored
                 -->
                 <INPUT TYPE="TEXT" VALUE="" NAME="Effort" size=10
-                       onfocus="return unfocus_Effort()"> &nbsp;&nbsp;&nbsp;&nbsp
-                <label>
-                    Duration (D) = cb(E)<sup>d</sup><sup>b</sup>
-                    =
-                </label>
+                       onfocus="return unfocus_Effort()" class="form-control" style="width:200px;">
+                <label>Duration (D) = cb(E)<sup>d</sup><sup>b</sup> =</label>
 
                 <INPUT TYPE="TEXT" VALUE="" NAME="Duration" size=10
-                       onfocus="return unfocus_Duration()">
+                       onfocus="return unfocus_Duration()" class="form-control" style="width:200px;">
                 <BR><BR>
                 <!-- a button which the user can click it to reset all fields on the form
                 -->
+                <h4>Step 5: Calculate the cost of this project: <small class="text-muted">(Richard Choppick)</small></h4>
+<div style="border: 1px solid black; border-radius: 15px; padding:20px;" class="form-group col-xs-12">
+
+<div class="form-group col-xs-12 form-inline ">
+<label  for="wage">Enter your employee wage ($/hr):</label><input type="number" name="wage" id="wage" value="14.00" class="form-control" />
+<label  for="employees">&nbsp;Enter the number of employees on the project:</label><input type="number" name="employees" id="employees" value="1" class="form-control" />
+</div>
+<div class="form-group col-xs-12 form-inline ">
+<label>Project Cost: $</label>&nbsp;&nbsp;<input readonly id="projectTotalCost" class="form-control" />&nbsp;&nbsp;
+<label>Cost per Employee: $</label>&nbsp;&nbsp;<input readonly id="costPerEmployee" class="form-control" />&nbsp;&nbsp;
+<label>Cost per Day: $</label>&nbsp;&nbsp;<input readonly id="costPerDay" class="form-control" />&nbsp;&nbsp;
+</div>
+<div class="form-group col-xs-12">
+<button onclick="event.preventDefault(); calculateCost();" class="btn btn-primary">Calculate Project Cost</button>
+</div> 
+</div>
+<br/>
                 <INPUT TYPE="RESET" Name="Reset" VALUE="Reset Data"
                        onClick="clearStatus()">
 
@@ -1164,8 +1191,4 @@
         -->
     </div>
 </BODY>
-
-<!-- End of Code.
-    -->
-
 </HTML>
