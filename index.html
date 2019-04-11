@@ -1198,13 +1198,19 @@ document.getElementById("costPerDay").value = costPerDay.toFixed(2);
             <!-- Dan stuff -->
             <div class="dan">
                 <h4>Alternative to unadjusted function points</h4>
-                <table class="table">
-                    <thead class=".thead-dark">
+                <table class="table table-bordered">
+                    <caption>
+                        <ul>
+                            <li>Use Case</li>
+                            <li>Actor</li>
+                        </ul>
+                    </caption>
+                    <thead class="thead-dark">
                         <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Simple</th>
-                        <th scope="col">Average</th>
-                        <th scope="col">Complex</th>
+                            <th scope="col"></th>
+                            <th scope="col">Simple</th>
+                            <th scope="col">Average</th>
+                            <th scope="col">Complex</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1213,21 +1219,20 @@ document.getElementById("costPerDay").value = costPerDay.toFixed(2);
                           <td><input type="number" name="simpleUseCase"></td>
                           <td><input type="number" name="averageUseCase"></td>
                           <td><input type="number" name="complexUseCase"></td>
-                        </tr>
-                        <tr>
+                      </tr>
+                      <tr>
                           <th scope="row">Actors</th>
                           <td><input type="number" name="simpleActor"></td>
                           <td><input type="number" name="averageActor"></td>
                           <td><input type="number" name="complexActor"></td>
-                        </tr>
-                    </tbody>
+                      </tr>
+                  </tbody>
               </table>
               <button type="button" class="btn btn-primary">Calculate </button>
               <small class="form-text text-muted">Argument 1</small>
               <small class="form-text text-muted">Argument 2</small>
           </div>
-
-</div>
-<script type="text/javascript" src="dan.js"></script>
-</BODY>
+      </div>
+      <script type="text/javascript" src="dan.js"></script>
+  </BODY>
 </HTML>
